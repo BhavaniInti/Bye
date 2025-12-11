@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3570929673.js" crossorigin="anonymous"></script>
+    <style>
+        table{
+            
+            border-collapse: collapse;
+        }
+        tr{
+         margin: 100px 50px;
+        }
+        td{
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            
+            color: black;
+        }
+        h1{
+        text-shadow: 3px 1px 3px  coral;
+        color:darkorchid;
+        }
+        i{
+           animation-name: html;
+           animation-duration: 5s;
+           animation-iteration-count: 20;
+           color: crimson;
+          
+           
+        }
+        @keyframes html {
+            from{color:chartreuse;}
+            to{color: red;}
+            
+        }
+        a{
+            text-decoration: none;
+            color:darkred;
+        }
+        a:hover{
+            font-size: larger;
+            color: black;
+        }
+        fieldset{
+            width: 300px;
+            background-color: aquamarine;
+            color: black;
+            font-family: serif;
+        }
+        legend{
+            text-align: center;
+        }
+        input{
+            border-radius: 3px;
+            border: 1px solid crimson;
+        
+        }
+        input:focus{
+            border: 3px solid blue;
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            background-color:darkolivegreen;
+            height: 30px;
+            padding-top: 10px;
+        }
+       
+    </style>
+
+</head>
+<body>
+    <h1><b>HTML</b></h1>
+    <b><i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;HTML stands for Hyper Text Markup Language<br>
+        <i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp; HTML is the standard markup language for creating Web pages<br>
+        <i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp;HTML describes the structure of a Web page<br>
+        <i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp; HTML consists of a series of elements<br>
+        <i class="fa-regular fa-circle-dot"></i>&nbsp;&nbsp; HTML elements tell the browser how to display the content<br></b>
+    <ul>
+        <li><a href="#box1">SocialMediaTags</a></li>
+        <li><a href="#box2">TextFormatTags</a></li>
+        <li><a href="#box3">Tables</a></li>
+        <li><a href="#box4">Forms</a></li>
+        
+    </ul>
+    <table >
+        <tr><td><h3><a href="#box1"><i class="fa-regular fa-hand-point-right"></i>&nbsp;&nbsp;SocialMediaTags</h3></a>
+            <div id="box1"></div>
+            <h4>Social media links are placed inside the "social" container. 
+                Each individual link is placed inside link tags. We will use CSS to style our social links.</h4>
+            <video src="../video1.mp4" width="200px" height="200px" controls></video>
+           <audio src="../better-day-186374.mp3" controls></audio>
+           <img src="../pawan-kalyan-pic.jpg" width="250px" height="200px">
+            </td></tr>
+        <tr><td><h3><a href="#box2"><i class="fa-regular fa-hand-point-right"></i>&nbsp;TextFormatTags</h3></a>
+        <div id="box2">
+            <h2>I am bhavai inti <br>
+                ghhdjhtfsvghjkloi8uytedgbhjkuytytgyuj
+            </h2>
+            <h4>Underline:</h4>  <u>Durga Bhavani</u><br>
+            <h4>Marquee: </h4><marquee behavior="alternate" direction="right">I am Good Girl</marquee><br>
+           <h4>Mark:</h4>  <mark>Lorem ipsum dolor sit amet.</mark><br>
+            <h4>SubScript: </h4> h<sub>2</sub>o<br>
+           <h4>SuperScript:</h4> a<sup>2</sup>+b<sup>2</sup><br>
+           <h4>Bold:</h4>  <b>I am Developer</b><br>
+           <h4>Strike:</h4> <strike>Bhavani Inti</strike><br>
+           <h4> Italic:</h4> <i>Lorem ipsum dolor sit amet consectetur.</i><br>
+           <h4>Pre: </h4><pre>Lorem, ipsum.</pre>
+            <h4>Big:</h4><big>Bhavani</big><br>
+            <h4>Small: </h4><small>Durga Inti</small><br>
+        </div></td></tr>
+        <tr><td><h3><a href="#box3"><i class="fa-regular fa-hand-point-right"></i>&nbsp;Tables</h3></a>
+        <div id="box3">
+            <h1>Table</h1><br>
+            <b>A table in HTML consists of table cells inside rows and columns.</b><br>
+            <p>Each table row starts with a tr and ends with a /tr tag.</p>
+        
+            <table border="1px">
+                <tr>
+                    <th>IdNo</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bhavani</td>
+                    <td>BTech</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mounika</td>
+                    <td>MBBS</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Krishna</td>
+                    <td>BTech</td>
+                </tr>
+            </table>
+        </div></td></tr>
+        <tr><td><h3><a href="#box4"><i class="fa-regular fa-hand-point-right"></i>&nbsp;Forms</h3></a>
+        <div id="box4">
+            <center><form action="">
+                <fieldset>
+                    <legend>Registration</legend>
+                    FristName:<input type="text" name="fristName" placeholder="Enter FristName"><br><br>
+                    LastName:<input type="text" name="lastName" placeholder="Enter LastName"><br><br>
+                    Email:<input type="email" name="email" placeholder="Enter Email"><br><br>
+                    Password:<input type="password" name="Password" placeholder="Enter Password"><br><br>
+                    DateOfBirth:<input type="date"><br><br>
+                    Age:<input type="number" name="age" max="29" min="18"><br><br>
+                    Gender:<input type="radio" name="Gender">Male
+                    <input type="radio" name="Gender" id="Gender">Female
+                    <input type="radio" name="Gender" id="Gender">Others<br>
+                    State:<select>
+                        <option name="state">AP</option>
+                        <option name="state">Delhi</option>
+                        <option name="state">Jaipur</option>
+                        <option name="state">Hyderabad</option>
+                        <option name="state">TamilNadu</option>
+                    </select><br>
+                    Resume:<input type="file"><br>
+                    Linkdein:<input type="url"><br>
+                    Descripition:&nbsp;<textarea rows="5" cols="50"></textarea>
+                    <input type="button" name="submit" id="submit" value="Submit" onclick="confirm('Your Data will be view by all team members')">
+        
+        
+                    
+        
+                </fieldset>
+               
+            </form>
+            </center>
+            
+        </div></td></tr>
+       
+    </table>
+</body>
+</html>
